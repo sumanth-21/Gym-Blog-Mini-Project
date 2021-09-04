@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./dist/css/styles.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--menu mobile-->
+    <div class="menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__close">
+            <i class="icon icon-close"></i>
+        </div>
+        <div class="mobile-menu__search">
+            <i class="icon icon-search"></i>
+        </div>
+        <nav class="mobile-menu__nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./classes.html">Classes</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./ourteam.html">Our Team</a></li>
+                <li>
+                    <div class="nav-drop">
+                        <a href="#">PAGES</a>
+                        <div><i class="icon icon-caret-right "></i></div>
+                    </div>
+                    <ul class="nav-dropdown nav-open">
+                        <li><a href="./aboutus.html">About us</a></li>
+                        <li><a href="./timetable.html">Classes timetable</a></li>
+                        <li><a href="./calculate.html">Bmi calculate</a></li>
+                        <li><a href="./ourteam.html">Our team</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./ourblog.html">Our blog</a></li>
+                        <li><a href="./404page.html">404</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-menu__nav-media">
+            <ul>
+                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Header Section-->
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="src/img/gym-logo.webp" alt="gym logo">
+                </a>
+            </div>
+            <nav class="hide-mobile header__wrapper__nav-menu">
+                <ul>
+                    <li class="active"><a href="./index.html">HOME</a></li>
+                    <li><a href="./aboutus.html">ABOUT US</a></li>
+                    <li><a href="./classes.html">CLASSES</a></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                    <li><a href="./ourteam.html">OUR TEAM</a></li>
+                    <li>
+                        <a href="#">PAGES</a>
+                        <ul class="dropdown">
+                            <li><a href="./aboutus.html">About us</a></li>
+                            <li><a href="./timetable.html">Classes timetable</a></li>
+                            <li><a href="./calculate.html">Bmi calculate</a></li>
+                            <li><a href="./ourteam.html">Our team</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./ourblog.html">Our blog</a></li>
+                            <li><a href="./404page.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contactus.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header__wrapper__right">
+                <div class="search  hide-mobile">
+                    <a href="./search.html"><i class="icon icon-search"></i></a>
+                </div>
+                <nav class="nav-media  hide-mobile">
+                    <ul>
+                        <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-button hide-desktop">
+                <i class="icon icon-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!--Hero Section-->
+        <section class="hero-section">
+            <div class="carousel">
+                <div class="carousel__hs-item">
+                    <div class="carousel__hs-item__container1">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="hero-text">
+                                    <span>SHAPE YOUR BODY</span>
+                                    <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
+                                    <a href="#" class="primary-btn">GET INFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__hs-item">
+                    <div class="carousel__hs-item__container2">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="hero-text">
+                                    <span>SHAPE YOUR BODY</span>
+                                    <h1>BE <strong>STRONG</strong> TRAINING HARD</h1>
+                                    <a href="#" class="primary-btn">GET INFO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__nav-icon">
+                    <i class="prev icon icon-angle-left" onclick="slide(-1)"></i>
+                    <i class="next icon icon-angle-right" onclick="slide(1)"></i>
+                </div>
+        </section>
+        <!--Choose Us-->
+        <section class="chooseus container">
+            <div class="container__header">
+                <div class="container__title">
+                    <span>WHY CHOSE US?</span>
+                    <h2>PUSH YOUR LIMITS FORWARD</h2>
+                </div>
+            </div>
+            <div class="container__body">
+                <div class="chooseus__item">
+                    <div class="chooseus__item__wrapper">
+                        <i class="gym gym-stationary-bike"></i>
+                    </div>
+                    <h4>Modern equipment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.</p>
+                </div>
+                <div class="container__body__items">
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__wrapper">
+                            <i class="gym gym-juice"></i>
+                        </div>
+                        <h4>Healthy nutrition plan</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+                <div class="container__body__items">
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__wrapper">
+                            <i class="gym gym-dumbell"></i>
+                        </div>
+                        <h4>Profesional training plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut dolore facilisis.</p>
+                    </div>
+                </div>
+                <div class="container__body__items">
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__wrapper">
+                            <i class="gym gym-heart-beat"></i>
+                        </div>
+                        <h4>Unique to your needs</h4>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Our Classes Section-->
+        <section class="offer">
+            <hgroup>
+                <h2>OUR CLASSES</h2>
+                <h3>WHAT WE CAN OFFER</h3>
+            </hgroup>
+            <div class="offer__container">
+                <div class="container__cards">
+                    <img src="src/img/class1.png" alt="girl measuring waist">
+                    <div class="container__text">
+                        <h4>STRENGTH</h4>
+                        <h5>WEIGHTLIFTING</h5>
+                        <a href="#"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="container__cards">
+                    <img src="src/img/class2.png" alt="girl streching">
+                    <div class="container__text">
+                        <h4>CARDIO</h4>
+                        <h5>INDOOR CYCLING</h5>
+                        <a href="#"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="container__cards">
+                    <img src="src/img/class3.png" alt="strength tranning">
+                    <div class="container__text">
+                        <h4>STRENGTH</h4>
+                        <h5>KETTLEBELL POWER</h5>
+                        <a href="#"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="container__cards align">
+                    <img src="src/img/class-4.png" alt="bicep curl">
+                    <div class="container__text">
+                        <h4>CARDIO</h4>
+                        <h5>INDOOR CYCLING</h5>
+                        <a href="#"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="container__cards align">
+                    <img src="src/img/class-5.png" alt="boxing">
+                    <div class="container__text">
+                        <h4>TRANNING</h4>
+                        <h5>BOXING</h5>
+                        <a href="#"><i class="icon icon-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Registration Section-->
+
+        <section class="register">
+            <div class="container">
+                <h2>REGISTRATION NOW TO GET MORE DEALS</h2>
+                <div>WHERE HEALTH, BEAUTY AND FITNESS MEET.</div>
+                <a href="#">APPOINTMENT</a>
+            </div>
+        </section>
+
+        <!--Ourplan-->
+
+        <section class="ourplan">
+            <div class="container">
+                <div>
+                    <hgroup class="top-header">
+                        <h2>OUR PLAN</h2>
+                        <h3>CHOOSE YOUR PRICING PLAN</h3>
+                    </hgroup>
+                </div>
+                <div class="enroll-cards">
+                    <div class="card-1">
+                        <hgroup class="card-header">
+                            <h3>Class drop-in</h3>
+                            <h2>$ 39.0</h2>
+                            <small>SINGLE CLASS</small>
+                        </hgroup>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" class="" title="open gallery"><i class="icon icon-image gallery-icon"></i></a>
+                        <a href="#" class="enroll-btn" title="Enroll here">ENROLL NOW</a>
+                    </div>
+                    <div class="card-1">
+                        <hgroup class="card-header">
+                            <h3>12 Month unlimited</h3>
+                            <h2>$ 99.0</h2>
+                            <small>SINGLE CLASS</small>
+                        </hgroup>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" title="open gallery"><i class="icon icon-image gallery-icon"></i></a>
+                        <a href="#" class="enroll-btn" title="Enroll here">ENROLL NOW</a>
+                    </div>
+                    <div class="card-1">
+                        <hgroup class="card-header">
+                            <h3>6 Month unlimited</h3>
+                            <h2>$ 59.0</h2>
+                            <small>SINGLE CLASS</small>
+                        </hgroup>
+                        <ul>
+                            <li>Free riding</li>
+                            <li>Unlimited equipments</li>
+                            <li>Personal trainer</li>
+                            <li>Weight losing classes</li>
+                            <li>Month to mouth</li>
+                            <li>No time restriction</li>
+                        </ul>
+                        <a href="#" title="open gallery"><i class="icon icon-image gallery-icon"></i></a>
+                        <a href="#" class="enroll-btn" title="Enroll here">ENROLL NOW</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Gallery Section-->
+
+        <section class="gallery">
+            <div class="row">
+                <div class="image-sec large-image">
+                    <img src="src/img/gallery-1.png" alt="gallery-image-1">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+                <div class="image-sec">
+                    <img src="src/img/gallery-2.png" alt="gallery-image-2">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+                <div class="image-sec margin">
+                    <img src="src/img/gallery-3.png" alt="gallery-image-2">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-sec">
+                    <img src="src/img/gallery-4.png" alt="gallery-image-2">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+                <div class="image-sec">
+                    <img src="src/img/gallery-5.png" alt="gallery-image-2">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+                <div class="image-sec large-image margin">
+                    <img src="src/img/gallery-6.png" alt="gallery-image-1">
+                    <div class="overlay icon-picture">
+                        <i class="icon icon-image"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR TEAMS -->
+
+        <section class="team">
+            <div class="team__wrapper">
+                <div class="clearfix team__wrapper__text">
+                    <hgroup>
+                        <h2>OUR TEAM</h2>
+                        <h3>TRAIN WITH EXPERTS</h3>
+                    </hgroup>
+                    <a href="#" class="team__wrapper__text--button">APPOINTMENT</a>
+                </div>
+                <div class="caro">
+                    <!--slide 1-->
+                    <div class="slide">
+                        <div class="team__carousel">
+                            <!-- <div class="team__crousel"> -->
+                            <div class="card">
+                                <div class="carousel-img">
+                                    <img src="src/img/team-1.png" alt="carousel-1">
+                                </div>
+                                <div class="team__crousel__text">
+                                    <h4>Athart Rachel</h4>
+                                    <h5>Gym Trainer</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="carousel-img">
+                                    <img src="src/img/team-2.png" alt="carousel-2">
+                                </div>
+                                <div class="team__crousel__text">
+                                    <h4>Athart Rachel</h4>
+                                    <h5>Gym Trainer</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="carousel-img">
+                                    <img src="src/img/team-3.png" alt="carousel-3">
+                                </div>
+                                <div class="team__crousel__text">
+                                    <h4>Athart Rachel</h4>
+                                    <h5>Gym Trainer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slide 2-->
+                    <div class="slide">
+                        <div class="team__carousel">
+                            <!-- <div class="team__crousel"> -->
+                            <div class="card">
+                                <div class="carousel-img">
+                                    <img src="src/img/team-4.png" alt="carousel-1">
+                                </div>
+                                <div class="team__crousel__text">
+                                    <h4>Athart Rachel</h4>
+                                    <h5>Gym Trainer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--   Contact and Footer    -->
+
+        <section class="contact">
+            <address class="container">
+            <div class="location">
+                <i class="icon icon-map-marker"></i>
+                <p>333 Middle Winchendon Rd, Rindge,<br> NH 03461</p>
+            </div>
+            <div class="contact-no">
+                <i class="icon icon-mobile"></i>
+                <ul>
+                    <li>125-711-811</li>
+                    <li>125-668-886</li>
+                </ul>
+            </div>
+            <div class="mail">
+                <i class="icon icon-envelope-filled"></i>
+                <p>Support.gymcenter@gmail.com</p>
+            </div>   
+        </address>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="about">
+                <div class="about__gym-logo">
+                    <a href="./index.html">
+                        <img src="src/img/gym-logo.webp" alt="gym logo">
+                    </a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua endisse ultrices gravida lorem.
+                </p>
+                <nav class="about__nav-media">
+                    <ul>
+                        <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                        <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                        <li><a href="#"><span class="icon icon-envelope-outline"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <h4>Useful links</h4>
+                <ul class="links__list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <h4>Support</h4>
+                <ul class="links__list">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tips">
+                <h4>Tips &amp; Guides</h4>
+                <div class="tips__description">
+                    <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                    <ul class="tips__description__info-list">
+                        <li>3 min read</li>
+                        <li>20 Comment</li>
+                    </ul>
+                </div>
+                <div class="tips__description">
+                    <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                    <ul class="tips__description__info-list">
+                        <li>3 min read</li>
+                        <li>20 Comment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copy-right">
+                <p>Copyright &copy; 2020 All rights reserved | This template is made with <i class="icon icon-filled-heart"></i> by <span>Colorlib</span> </p>
+            </div>
+        </div>
+    </footer>
+    <script src="dist/js/bundle.min.js"></script>
+</body>
+
+</html>

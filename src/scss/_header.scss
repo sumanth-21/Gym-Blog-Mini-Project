@@ -1,0 +1,199 @@
+/* -----Header Mobile section------*/
+.menu-overlay {
+    @include position(fixed,0,0,$bg : $text-color,$time: 0.3s);
+    background: $overlay;
+    z-index: 2;
+    height: 100%;
+    visibility: hidden;
+}
+.mobile-menu {
+    @include position(fixed,-30rem,0,$w: 30rem,$bg : $text-color,$time: all 0.5s);
+    z-index: 3;
+    overflow-y: auto;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5rem 3rem 3rem 3rem;
+    display: block;
+    &__close {
+        @include position(absolute,25rem,2rem,$w: 3rem,$bg : $text-color);
+        height: 3rem;
+        border: .1rem solid $primary;
+        border-radius: .2rem;
+        text-align: center;
+        line-height: $line-height-XXVII;
+        cursor: pointer;
+        i {
+            font-size: $font-size-XXII;
+        }
+    }
+    &__search {
+        font-size: $font-size-XVIII;
+        text-align: center;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+    &__nav ul li {
+        a {
+            display: block;
+            padding: 1rem 0;
+            color: $primary;
+            border-bottom: .1rem solid $primary;
+            font-weight: weight(medium);
+            font-family: "oswald_regularregular", sans-serif;
+            font-size: $font-size-XV;
+            line-height: $line-height-XXII;
+        }
+        a:hover {
+            color: $hover-color;
+        }
+        .nav-drop {
+            display: flex;
+            font-size: $font-size-XV;
+            border-bottom: .1rem solid $primary;
+            a {
+                border: none;
+            }
+            div {
+                cursor: pointer;
+                padding-top: 1.2rem;
+                margin-left: 0.6rem;
+                &.slick-open {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .nav-dropdown {
+            display: none;
+        }
+    }
+    &__nav-media {
+        text-align: center;
+        padding-top: 2rem;
+        ul li {
+            display: inline-block;
+            font-size: $font-size-XVI;
+            margin-right: .7rem;
+            a {
+                color: $gray-dark;
+            }
+        }
+    }
+}
+
+.slick-down {
+    transform: rotate(90deg);
+}
+
+.overlay-active {
+    visibility: visible;
+}
+.menu-open {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* -----Header section------*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    padding: 5.5rem 1.5rem 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            padding: 0 1.5rem;
+        }
+        div.hide-desktop {
+            display: none;
+        }
+        &__nav-menu ul li {
+            display: inline-block;
+            margin-right: 3.2rem;
+            position: relative;
+            a {
+                display: block;
+                font-size: $font-size-XV;
+                letter-spacing: .1rem;
+                padding: 1rem 0;
+                position: relative;
+                transition: all .3s;
+                font-family: "oswald_regularregular", sans-serif;
+                &:hover {
+                    color: $hover-color;
+                    transition: all .3s;
+                }
+                &::after {
+                    @include position(absolute, 0, 1.7rem, $bg: $primary-color, $time: all .3s);
+                    height: .1rem;
+                    content: "";
+                    transform: rotate(-20deg);
+                    opacity: 0;
+                }
+            }
+            &:hover>a::after,
+            &.active>a::after {
+                opacity: 1;
+            }
+            &.active a {
+                color: $primary-color;
+            }
+            .dropdown {
+                @include position(absolute, -3rem, 5.8rem, $w: 18rem, $bg: $dropdown-bg, $time: all .3s);
+                text-align: left;
+                padding: 1.3rem 0 2rem;
+                opacity: 0;
+                visibility: hidden;
+                li:hover>a::after {
+                    opacity: 0;
+                }
+                li {
+                    display: block;
+                    a {
+                        padding: .6rem 0 .6rem 3rem;
+                        font-weight: weight(regular);
+                        font-family: "oswald_regularregular", sans-serif;
+                    }
+                }
+            }
+            &:hover>.dropdown {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &__right {
+            display: flex;
+            font-size: $font-size-XV;
+            padding: .9rem;
+            .search {
+                padding-right: 2rem;
+                position: relative;
+                &::after {
+                    @include position(absolute, 3rem, .2rem, $w: .1rem, $bg: $pipe-color);
+                    height: 1.5rem;
+                    content: "";
+                }
+            }
+            .nav-media ul li {
+                display: inline-block;
+                margin-left: 1.5rem;
+            }
+        }
+        .menu-button {
+            font-size: 22px;
+            margin-right: 40px;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            line-height: 29px;
+            text-align: center;
+            z-index: 1;
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
