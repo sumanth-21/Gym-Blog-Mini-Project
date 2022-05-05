@@ -1,4 +1,4 @@
-# Adv. UI - Group 1 - Radius
+# Adv. UI 
 
 ## Pre-requisites
 1. NodeJS (setup on 14.15)
